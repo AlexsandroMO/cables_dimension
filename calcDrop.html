@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Engineering Solutions</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- <link rel="stylesheet" href="static/plugins/fontawesome-free/all.min.css">
+<link rel="stylesheet" href="static/dist/css/adminlte.min.css"> -->
+
+    <link type="text/css" rel="stylesheet" href="../static/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="../static/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../static/css/styles-drop-calc.css">
+    <link type="text/css" rel="stylesheet" href="../static/css/styles-isa.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img class="resizable-image" src="../static/media/LOGO_AUTO.png" alt="Logo da empresa" width=250 height=100></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calcDrop.html">Calculos QT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="isa-51.html">ISA 5.1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="name-tag.html">Instrumentation Name</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="split-text.html">Split Text</a>
+                </li>
+				 <li class="nav-item">
+                    <a class="nav-link" href="data-sheet.html">Data Sheet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="construction.html">Entrar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="construction.html">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="construction.html">Sair</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="card-body">
+        <div class="card-body">
+            <div class="offset-1 col-10 list-div">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group" id="form-select">
+                            <label>Tipo de Circuito</label>
+                            <select class="form-control" id="circuit-type">
+                                <option data-select-id="2">-</option>
+                                <option data-select-id="3">Monofásico</option>
+                                <option>Trifásico</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="width: 10px">#</th>
+                                <th>Dados do Circuito</th>
+                                <th>Dados</th>
+                                <th style="width: 40px">Unidade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Tensão Nominal (Vn)</td>
+                                <td>
+                                    <!--<input type="number" class="form-control" id="nominalTension" placeholder="0">-->
+                                    <select class="form-control" id="nominalTension">
+                                        <option data-select-id="0">-</option>
+                                        <option data-select-id="5">12</option>
+                                        <option data-select-id="24">24</option>
+                                        <option data-select-id="36">36</option>
+                                        <option data-select-id="110">110</option>
+                                        <option data-select-id="115">115</option>
+                                        <option data-select-id="120">120</option>
+                                        <option data-select-id="125">125</option>
+                                        <option data-select-id="127">127</option>
+                                        <option data-select-id="220">220</option>
+                                        <option data-select-id="230">230</option>
+                                        <option data-select-id="254">254</option>
+                                        <option data-select-id="240">240</option>
+                                        <option data-select-id="380">380</option>
+                                        <option data-select-id="440">440</option>
+                                        <option data-select-id="480">480</option>
+                                        <option data-select-id="760">760</option>
+                                        <option data-select-id="760">1000</option>
+                                        <option data-select-id="13800">13800</option>
+                                        <option data-select-id="69000">69000</option>
+                                        <option data-select-id="138000">138000</option>
+                                    </select>
+                                </td>
+                                <td><span class="badge">V</span></td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Potência (P)</td>
+                                <td>
+                                    <input type="number" class="form-control rounded-0" id="powerCircuit"
+                                        placeholder="0">
+                                </td>
+                                <td><span class="badge">P</span></td>
+                            </tr>
+                            <td>3.</td>
+                            <td>Corrente Nominal (In)</td>
+                            <td>
+                                <input type="number" class="form-control rounded-0" id="nominalCorrent" placeholder="0">
+                            </td>
+                            <td><span class="badge">A</span></td>
+                            </tr>
+                            <td>4.</td>
+                            <td>Fator de Potência (fP)</td>
+                            <td>
+                                <input type="text" class="form-control rounded-0" id="potencialFactor" value="1">
+                            </td>
+                            <td><span class="badge">-</span></td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>Corrente de Dim. (Idim)</td>
+                                <td>
+                                    <input type="number" class="form-control rounded-0" id="dimensionCorrent" readonly>
+                                </td>
+                                <td><span class="badge">A</span></td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>Queda de (V) Adm.</td>
+                                <td>
+                                    <input type="number" class="form-control rounded-0" id="dropTension" value="3">
+                                </td>
+                                <td><span class="badge">%</span></td>
+                            </tr>
+                            <tr>
+                                <td>7.</td>
+                                <td>Comprimento do Circuito (L)</td>
+                                <td>
+                                    <input type="number" class="form-control rounded-0" id="circuitLenght"
+                                        placeholder="0">
+                                </td>
+                                <td><span class="badge">m</span></td>
+                            </tr>
+                            <tr>
+                                <td>8.</td>
+                                <td>Resistência do Cabo (R)</td>
+                                <td>
+                                    <input type="number" class="form-control rounded-0" id="cableR" placeholder="0.000"
+                                        readonly>
+                                </td>
+                                <td><span class="badge">ohm/km</span></td>
+                            </tr>
+                            <td>9.</td>
+                            <td>Reatância do Cabo (X)</td>
+                            <td>
+                                <input type="number" class="form-control rounded-0" id="cableX" placeholder="0.000"
+                                    readonly>
+                            </td>
+                            <td><span class="badge">ohm/km</span></td>
+                            </tr>
+                            <td>10.</td>
+                            <td>Cabos por Fase</td>
+                            <td>
+                                <input type="number" class="form-control rounded-0" id="cableFase" value="1">
+                            </td>
+                            <td><span class="badge">-</span></td>
+                            </tr>
+                            <td>11.</td>
+                            <td>Queda de (V)) Exercida</td>
+                            <td>
+                                <input type="num" class="form-control rounded-0" id="dropTensionE" placeholder="0"
+                                    readonly>
+                            </td>
+                            <td><span class="badge">%</span></td>
+                            </tr>
+                            <td>12.</td>
+                            <td>Seção Adotada</td>
+                            <td>
+                                <select class="form-control select2 select2-hidden-accessible" id="sectionChoise"
+                                    style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                                    <option selected="selected" data-select-id="0">-</option>
+                                    <option data-select-id="0,5">0,5</option>
+                                    <option data-select-id="1">1</option>
+                                    <option data-select-id="1,5">1,5</option>
+                                    <option data-select-id="2,5">2,5</option>
+                                    <option data-select-id="4">4</option>
+                                    <option data-select-id="6">6</option>
+                                    <option data-select-id="10">10</option>
+                                    <option data-select-id="16">16</option>
+                                    <option data-select-id="25">25</option>
+                                    <option data-select-id="35">35</option>
+                                    <option data-select-id="50">50</option>
+                                    <option data-select-id="70">70</option>
+                                    <option data-select-id="95">95</option>
+                                    <option data-select-id="120">120</option>
+                                    <option data-select-id="150">150</option>
+                                    <option data-select-id="185">185</option>
+                                    <option data-select-id="240">240</option>
+                                    <option data-select-id="300">300</option>
+                            </td>
+                            <td><span class="badge">mm²</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="submit" class="btn btn-info" onclick="calcCirc()">Calcular</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer>
+            <p>Engineering Solutions</p>
+        </footer>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="../static/js/DropTension.js"></script>
+    <script src="../static/js/scripts.js"></script>
+
+</body> 
+
+</html>

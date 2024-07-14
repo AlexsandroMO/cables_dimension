@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Engineering Solutions</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- <link rel="stylesheet" href="static/plugins/fontawesome-free/all.min.css">
+<link rel="stylesheet" href="static/dist/css/adminlte.min.css"> -->
+
+    <link type="text/css" rel="stylesheet" href="../static/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="../static/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../static/css/styles-drop-calc.css">
+    <link type="text/css" rel="stylesheet" href="../static/css/styles-isa.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img class="resizable-image" src="../static/media/LOGO_AUTO.png" alt="Logo da empresa" width=250 height=100></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calcDrop.html">Calculos QT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="isa-51.html">ISA 5.1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="name-tag.html">Instrumentation Name</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="split-text.html">Split Text</a>
+                </li>
+				 <li class="nav-item">
+                    <a class="nav-link" href="data-sheet.html">Data Sheet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="construction.html">Entrar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="construction.html">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="construction.html">Sair</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="card-body">
+        <div class="card-body">
+            <div class="offset-1 col-10 list-div">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group" id="form-select">
+                            <label>Quantidade de Cabos</label>
+                            <input type="text" class="form-control-0" id="varResult" placeholder="--" disabled>
+                        </div>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="width: 10px">#</th>
+                                <th>Dados do Circuito</th>
+                                <th>Dados</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Tipo de Cabo</td>
+                                <td>
+                                    <!--<input type="number" class="form-control" id="nominalTension" placeholder="0">-->
+                                    <select class="form-control" id="cable">
+                                        <option data-select-id="0">-</option>
+                                        <option data-select-id="5.25">Cat5</option>
+                                        <option data-select-id="6.0">Cat5e</option>
+                                        <option data-select-id="6.5">Cat6</option>
+                                        <option data-select-id="8.3">Cat6a</option>
+                                        <option data-select-id="10.0">Cat7</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Tipo de Eletroduto</td>
+                                <td>
+                                    <!--<input type="number" class="form-control" id="nominalTension" placeholder="0">-->
+                                    <select class="form-control" id="eletro">
+                                        <option data-select-id="0">-</option>
+                                        <option data-select-id="15.8">1/2"</option>
+                                        <option data-select-id="21.3">3/4"</option>
+                                        <option data-select-id="26.7">1"</option>
+                                        <option data-select-id="53.4">2"</option>
+                                        <option data-select-id="78.6">3"</option>
+                                        <option data-select-id="103.6">4"</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="submit" class="btn btn-info" onclick="calcCirc()">Calcular</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer>
+            <p>Engineering Solutions</p>
+        </footer>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="../static/js/DropCables.js"></script>
+    <script src="../static/js/scripts.js"></script>
+
+</body>
+
+</html>
